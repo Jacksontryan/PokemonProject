@@ -1,0 +1,74 @@
+{
+name: name,
+levels:[
+{
+name : levelName,
+encounters:{
+grass:[
+{
+name : "Encounter 1",
+minLevel,
+maxLevel,
+oddsEncountered
+},...
+]
+oldRod : [
+{
+name : "Encounter 1",
+minLevel,
+maxLevel,
+oddsEncountered
+},...
+]
+goodRod : [
+{
+name : "Encounter 1",
+minLevel,
+maxLevel,
+oddsEncountered
+},...
+],
+superRod : [
+{
+name : "Encounter 1",
+minLevel,
+maxLevel,
+oddsEncountered
+},...
+],
+gifts : [
+{
+name : "Encounter 1",
+minLevel,
+maxLevel,
+oddsEncountered
+},...
+],
+gym:{
+leader:"name",(only name, put battle data in battles tab)
+badge:"name",
+trainers:[
+trainer1,(only name, put battle data in battles tab)
+trainer2,
+]
+},
+battles:[
+{
+name,
+job,
+pokemon:[
+{
+name,
+level
+},...
+]
+}
+],
+items:[
+item1,
+item2,
+...
+],...
+}
+]
+}
