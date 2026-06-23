@@ -11,10 +11,14 @@
 class Type : public TypeBase {
 public:
 
-    Type(std::string &name, int id, double* weaknesses);
+    Type(const std::string name, int id, double* weaknesses);
+    Type(const Type& other);
     double getWeakness(Type* type);
     Type &operator=(Type * p);
-    static Type** instantiateTypes();
+
+    double getWeakness(TypeBase *type);
+
+    static std::unique_ptr<Type[]> instantiateTypes();
 
 };
 

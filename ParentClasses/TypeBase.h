@@ -4,20 +4,22 @@
 
 #ifndef POKEMONPROJECT_TYPEBASE_H
 #define POKEMONPROJECT_TYPEBASE_H
+#include <memory>
 #include <string>
 
 
 class TypeBase {
 protected:
-    std::string& name;
-    int id;
-    double* weaknesses;
+    const std::string name;
+    const int id;
+    std::unique_ptr<double[]> weaknesses;
 public:
-    TypeBase(std::string name, int id, double* weaknesses) : name(name), id(id), weaknesses(weaknesses) {}
-    virtual ~TypeBase();
-    std::string& getName();
-    int getId();
-    double* getWeaknesses();
+    TypeBase(const std::string name, int id, double* weaknesses) : name(name), id(id), weaknesses(weaknesses) {}
+    ~TypeBase()= default;
+    [[nodiscard]] virtual std::string getName() const;
+    [[nodiscard]] virtual int getId() const;
+    [[nodiscard]] virtual double* getWeaknesses();
+    virtual double getWeakness(TypeBase* type);
 };
 
 

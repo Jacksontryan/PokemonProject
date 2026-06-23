@@ -14,7 +14,10 @@ class EvolutionMethodBase;
 class EvolutionMethod : public EvolutionMethodBase {
 
     public:
-    EvolutionMethod(std::string& name, int id);
+    EvolutionMethod(const std::string& name, const int id);
+    std::string getName() const;
+    int getId() const override;
+    static EvolutionMethod* instantiateEvolutionMethods();
 
 };
 

@@ -28,6 +28,7 @@ add_executable(PokemonProject "QT Tutorials/main.cpp"
         gen1/Type.cpp
         gen1/EvolutionMethod.cpp
         gen1/EvolutionMethod.h
+        ParentClasses/TypeBase.cpp
 )
 
 target_link_libraries(PokemonProject PRIVATE Qt6::Core Qt6::Widgets)

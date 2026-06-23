@@ -10,12 +10,14 @@ using namespace std;
 
 class EvolutionMethodBase {
     protected:
-    std::string& name;
-    int id;
+    const std::string name;
+    const int id;
     public:
-    EvolutionMethodBase(std::string &name, int id) : name(name), id(id) {}
-    int getId();
-    std::string getName();
+    EvolutionMethodBase(const std::string name, int id);
+    virtual ~EvolutionMethodBase();
+    virtual int getId() const;
+    virtual const std::string getName();
+    static EvolutionMethodBase* initializeEvolutionMethods(){return new EvolutionMethodBase("",-1);}
 };
 
 

@@ -29,7 +29,17 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df20f3ac-0ad9-450e-a106-624a6aff05e4" name="Changes" comment="" />
+    <list default="true" id="df20f3ac-0ad9-450e-a106-624a6aff05e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ParentClasses/TypeBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/TypeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/TypeBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen1/EvolutionMethod.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/EvolutionMethod.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen1/EvolutionMethod.h" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/EvolutionMethod.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen1/Type.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/Type.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen1/Type.h" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/Type.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +53,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Jacksontryan&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Jacksontryan/PokemonProject.git&quot;,
+    &quot;accountId&quot;: &quot;51199962-9f64-46fd-9b8a-2d283969ff9d&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ParentClasses/GrowthRateBase.h" root0="FORCE_HIGHLIGHTING" />
@@ -82,6 +104,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "RunOnceActivity.west.config.association.type.startup.service": "true",
@@ -114,6 +137,11 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeBoostTestRunConfigurationType" factoryName="Boost Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="BeforeTestRunTask" enabled="true" />
@@ -139,11 +167,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -162,7 +185,8 @@
       <workItem from="1781656874197" duration="1479000" />
       <workItem from="1781669149157" duration="14636000" />
       <workItem from="1782087748156" duration="4066000" />
-      <workItem from="1782136023363" duration="1607000" />
+      <workItem from="1782136023363" duration="3823000" />
+      <workItem from="1782185373396" duration="4544000" />
     </task>
     <servers />
   </component>
