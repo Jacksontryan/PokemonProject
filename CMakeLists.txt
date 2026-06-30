@@ -13,7 +13,9 @@ set(CMAKE_AUTOUIC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 
-add_executable(PokemonProject "QT Tutorials/main.cpp"
+qt_add_resources(RESOURCES resources.qrc)
+
+add_executable(PokemonProject "QT Tutorials/main.cpp" ${RESOURCES}
         ParentClasses/PokemonBase.h
         ParentClasses/SpeciesBase.h
         ParentClasses/GrowthRateBase.h
@@ -29,6 +31,27 @@ add_executable(PokemonProject "QT Tutorials/main.cpp"
         gen1/EvolutionMethod.cpp
         gen1/EvolutionMethod.h
         ParentClasses/TypeBase.cpp
+        SmartPointer.h
+        Main.cpp
+        ParentClasses/EvolutionMethodBase.cpp
 )
+
+add_executable(Bits Bits/Bit.h
+        Bits/Bit.cpp
+        Bits/Byte.h
+        Bits/Byte.cpp
+        Bits/Main.cpp
+        Bits/BitManager.cpp
+        Bits/BitManager.h
+)
+
+include(FetchContent)
+FetchContent_Declare(
+        Catch2
+        GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+        GIT_TAG v3.5.3
+)
+FetchContent_MakeAvailable(Catch2)
+target_link_libraries(PokemonProject PRIVATE Catch2::Catch2WithMain)
 
 target_link_libraries(PokemonProject PRIVATE Qt6::Core Qt6::Widgets)

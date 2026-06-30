@@ -10,15 +10,17 @@
 
 class TypeBase {
 protected:
-    const std::string name;
-    const int id;
-    std::unique_ptr<double[]> weaknesses;
+    std::string name;
+    int id;
+    double* weaknesses;
+    const size_t numberWeaknesses;
 public:
-    TypeBase(const std::string name, int id, double* weaknesses) : name(name), id(id), weaknesses(weaknesses) {}
-    ~TypeBase()= default;
+    TypeBase(std::string  name, int id, const double* weaknesses, size_t size);
+
+    virtual ~TypeBase()= default;
     [[nodiscard]] virtual std::string getName() const;
     [[nodiscard]] virtual int getId() const;
-    [[nodiscard]] virtual double* getWeaknesses();
+    [[nodiscard]] virtual double* getWeaknesses() const;
     virtual double getWeakness(TypeBase* type);
 };
 

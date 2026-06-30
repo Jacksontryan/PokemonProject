@@ -3,35 +3,65 @@
 //
 #include "Type.h"
 
-Type::Type(const std::string name, int id, double* weaknesses): TypeBase(name, id, weaknesses) {
+#include <iostream>
+
+/*Type::Type() : TypeBase("", -1, {}, 15){
+    std::cout<<"Type Constructor Called"<<std::endl;
+}*/
+
+Type::Type(const std::string& name, int id, double* weaknesses): TypeBase(name, id, weaknesses, 15) {
     for (int i = 0; i < 15; i++) {
         this->weaknesses[i] = weaknesses[i];
     }
 }
 
-Type::Type(const Type &other) : TypeBase(other.getName(), other.getId(), other.getWeaknesses()){}
+Type::Type(const Type &other) : TypeBase(other.name, other.getId(), other.getWeaknesses(), 15){}
 
-double Type::getWeakness(Type* type) {
-    return weaknesses[type->id];
-}
 
 Type &Type::operator=(Type *p) {
+
+    std::cout << "= called" << std::endl;
+
     this->name = p->name;
     this->id = p->id;
+
+    std::cout << "Name and Id set" << std::endl;
+
+    delete[] this->weaknesses;
+    this->weaknesses = new double[15];
+
+    std::cout << "Weaknesses deleted and reset for entry" << std::endl;
+
     for (int i = 0; i < 15; i++) {
+        std::cout << i << std::endl;
         this->weaknesses[i] = p->weaknesses[i];
     }
+
+    std::cout << "Weaknesses set" << std::endl;
+
     delete p;
+
+    std::cout << "Other deleted" << std::endl;
+
     return *this;
 }
 
 double Type::getWeakness(TypeBase* type) {
-    return weaknesses.get()[type->getId()-1];
+
+    type = dynamic_cast<Type*>(type);
+
+    if (!type) {
+        return -1.0;
+    }
+
+    return weaknesses[type->getId()-1];
 }
 
-std::unique_ptr<Type[]>Type::instantiateTypes() {
+Type* Type::instantiateTypes() {
 
-    double normalWeaknesses[15];
+    std::cout <<"Instantiate Types Started"<<std::endl;
+
+    double *normalWeaknesses = new double[15];
 
     normalWeaknesses[0] = 1.0;//normal
     normalWeaknesses[1] = 1.0;//fire
@@ -51,9 +81,11 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
 
     std::string name = "Normal";
 
-    Type normal = Type(name, 1, normalWeaknesses);
+    Type* normal = new Type(name, 1, normalWeaknesses);
 
-    double fireWeaknesses[15];
+    std::cout<<"Normal Created" << std::endl;
+
+    double *fireWeaknesses = new double[15];
 
     fireWeaknesses[0] = 1.0;//normal
     fireWeaknesses[1] = 0.5;//fire
@@ -73,9 +105,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
 
     name = "Fire";
 
-    Type fire = Type(name, 2, fireWeaknesses);
+    Type *fire = new Type(name, 2, fireWeaknesses);
 
-    double waterWeaknesses[15];
+    double *waterWeaknesses = new double[15];
 
     waterWeaknesses[0] = 1.0;//normal
     waterWeaknesses[1] = 0.5;//fire
@@ -95,9 +127,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
 
     name = "Water";
 
-    Type water = Type(name, 3, waterWeaknesses);
+    Type* water = new Type(name, 3, waterWeaknesses);
 
-    double electricWeaknesses[15];
+    double *electricWeaknesses = new double[15];
 
     electricWeaknesses[0] = 1.0;//normal
     electricWeaknesses[1] = 1.0;//fire
@@ -116,9 +148,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     electricWeaknesses[14] = 1.0;//dragon
 
     name = "Electric";
-    Type electric = Type(name, 4, electricWeaknesses);
+    Type* electric = new Type(name, 4, electricWeaknesses);
 
-    double grassWeaknesses[15];
+    double *grassWeaknesses = new double[15];
 
     grassWeaknesses[0] = 1.0;//normal
     grassWeaknesses[1] = 2.0;//fire
@@ -137,9 +169,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     grassWeaknesses[14] = 1.0;//dragon
 
     name = "Grass";
-    Type grass = Type(name, 5, grassWeaknesses);
+    Type* grass = new Type(name, 5, grassWeaknesses);
 
-    double iceweaknesses[15];
+    double *iceweaknesses = new double[15];
 
     iceweaknesses[0] = 1.0;//normal
     iceweaknesses[1] = 2.0;//fire
@@ -158,9 +190,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     iceweaknesses[14] = 1.0;//dragon
 
     name = "Ice";
-    Type ice = Type(name, 6, iceweaknesses);
+    Type* ice = new Type(name, 6, iceweaknesses);
 
-    double fightingWeaknesses[15];
+    double *fightingWeaknesses = new double[15];
 
     fightingWeaknesses[0] = 1.0;//normal
     fightingWeaknesses[1] = 1.0;//fire
@@ -179,9 +211,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     fightingWeaknesses[14] = 1.0;//dragon
 
     name = "Fighting";
-    Type fighting = Type(name, 7, fightingWeaknesses);
+    Type *fighting = new Type(name, 7, fightingWeaknesses);
 
-    double poisonweaknesses[15];
+    double *poisonweaknesses = new double[15];
 
     poisonweaknesses[0] = 1.0;//normal
     poisonweaknesses[1] = 1.0;//fire
@@ -200,9 +232,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     poisonweaknesses[14] = 1.0;//dragon
 
     name = "Poison";
-    Type poison = Type(name, 8, poisonweaknesses);
+    Type* poison = new Type(name, 8, poisonweaknesses);
 
-    double groundweaknesses[15];
+    double *groundweaknesses = new double[15];
 
     groundweaknesses[0] = 1.0;//normal
     groundweaknesses[1] = 1.0;//fire
@@ -221,9 +253,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     groundweaknesses[14] = 1.0;//dragon
 
     name = "Ground";
-    Type ground = Type(name, 9, groundweaknesses);
+    Type* ground = new Type(name, 9, groundweaknesses);
 
-    double flyingweaknesses[15];
+    double *flyingweaknesses = new double[15];
 
     flyingweaknesses[0] = 1.0;//normal
     flyingweaknesses[1] = 1.0;//fire
@@ -242,9 +274,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     flyingweaknesses[14] = 1.0;//dragon
 
     name = "Flying";
-    Type flying = Type(name, 10, flyingweaknesses);
+    Type* flying = new Type(name, 10, flyingweaknesses);
 
-    double psychicweaknesses[15];
+    double *psychicweaknesses = new double[15];
 
     psychicweaknesses[0] = 1.0;//normal
     psychicweaknesses[1] = 1.0;//fire
@@ -263,9 +295,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     psychicweaknesses[14] = 1.0;//dragon
 
     name = "Psychic";
-    Type psychic = Type(name, 11, psychicweaknesses);
+    Type* psychic = new Type(name, 11, psychicweaknesses);
 
-    double bugweaknesses[15];
+    double *bugweaknesses = new double[15];
 
     bugweaknesses[0] = 1.0;//normal
     bugweaknesses[1] = 2.0;//fire
@@ -284,9 +316,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     bugweaknesses[14] = 1.0;//dragon
 
     name = "Bug";
-    Type bug = Type(name, 12, bugweaknesses);
+    Type* bug = new Type(name, 12, bugweaknesses);
 
-    double rockweaknesses[15];
+    double *rockweaknesses = new double[15];
 
     rockweaknesses[0] = 0.5;//normal
     rockweaknesses[1] = 0.5;//fire
@@ -305,9 +337,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     rockweaknesses[14] = 1.0;//dragon
 
     name = "Rock";
-    Type rock = Type(name, 13, rockweaknesses);
+    Type* rock = new Type(name, 13, rockweaknesses);
 
-    double ghostweaknesses[15];
+    double *ghostweaknesses = new double[15];
 
     ghostweaknesses[0] = 0.0;//normal
     ghostweaknesses[1] = 1.0;//fire
@@ -326,9 +358,9 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     ghostweaknesses[14] = 1.0;//dragon
 
     name = "Ghost";
-    Type ghost = Type(name, 14, ghostweaknesses);
+    Type* ghost = new Type(name, 14, ghostweaknesses);
 
-    double dragonweaknesses[15];
+    double *dragonweaknesses = new double[15];
 
     dragonweaknesses[0] = 1.0;//normal
     dragonweaknesses[1] = 0.5;//fire
@@ -347,11 +379,73 @@ std::unique_ptr<Type[]>Type::instantiateTypes() {
     dragonweaknesses[14] = 2.0;//dragon
 
     name = "Dragon";
-    Type dragon = Type(name, 15, dragonweaknesses);
+    Type* dragon = new Type(name, 15, dragonweaknesses);
 
-    Type* types = new Type[]{normal, fire, water, electric, grass, ice, fighting, poison, ground, flying, psychic, bug, rock, ghost, dragon};
+    Type* types = new Type[15];
 
-    std::unique_ptr<Type[]> ptr = std::make_unique<Type[]>(types);
+    std::cout << std::endl << "Types array created" << std::endl;
+
+    types[0] = normal;
+
+    std::cout << "Normal added" << std::endl;
+
+    types[1] = fire;
+
+    std::cout << "Fire added" << std::endl;
+
+    types[2] = water;
+
+    std::cout << "Water added" << std::endl;
+
+    types[3] = electric;
+
+    std::cout << "Electric added" << std::endl;
+
+    types[4] = grass;
+
+    std::cout << "Grass added" << std::endl;
+
+    types[5] = ice;
+
+    std::cout << "Ice added" << std::endl;
+
+    types[6] = fighting;
+
+    std::cout << "Fighting added" << std::endl;
+
+    types[7] = poison;
+
+    std::cout << "Poisoned added" << std::endl;
+
+    types[8] = ground;
+
+    std::cout << "Ground added" << std::endl;
+
+    types[9] = flying;
+
+    std::cout << "Flying added" << std::endl;
+
+    types[10] = psychic;
+
+    std::cout << "Psychic added" << std::endl;
+
+    types[11] = bug;
+
+    std::cout << "Bug added" << std::endl;
+
+    types[12] = rock;
+
+    std::cout << "Rock added" << std::endl;
+
+    types[13] = ghost;
+
+    std::cout << "Ghost added" << std::endl;
+
+    types[14] = dragon;
+
+    std::cout << "Dragon added" << std::endl;
+
+    std::cout << "Types array filled" << std::endl;
 
     return types;
 }

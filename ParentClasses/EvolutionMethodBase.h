@@ -6,18 +6,20 @@
 #ifndef POKEMONPROJECT_EVOLUTIONMETHODBASE_H
 #define POKEMONPROJECT_EVOLUTIONMETHODBASE_H
 #include <string>
+
+#include "SpeciesBase.h"
 using namespace std;
 
 class EvolutionMethodBase {
     protected:
-    const std::string name;
-    const int id;
+    std::string name;
+    int id;
+    SpeciesBase* evolution;
     public:
-    EvolutionMethodBase(const std::string name, int id);
+    EvolutionMethodBase(std::string name, int id); //,SpeciesBase* evolution);
     virtual ~EvolutionMethodBase();
-    virtual int getId() const;
-    virtual const std::string getName();
-    static EvolutionMethodBase* initializeEvolutionMethods(){return new EvolutionMethodBase("",-1);}
+    [[nodiscard]] virtual int getId() const;
+    [[nodiscard] ]virtual std::string getName() const;
 };
 
 

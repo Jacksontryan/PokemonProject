@@ -1,7 +1,6 @@
 #ifndef QTABSCROLLWIDGET_H
 #define QTABSCROLLWIDGET_H
 
-#include <QWidget>
 #include <QTabBar>
 #include <QScrollArea>
 #include <QStackedWidget>

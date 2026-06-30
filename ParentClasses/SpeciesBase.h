@@ -10,19 +10,21 @@
 #include "EvolutionMethodBase.h"
 #include "GrowthRateBase.h"
 #include "TypeBase.h"
+class EvolutionMethodBase;
+
 class SpeciesBase {
     int id;
     std::string name;
-    TypeBase type1;
-    TypeBase type2;
+    //TypeBase type1;
+    //TypeBase type2;
     double weight;
     double height;
     int* baseStats;
     GrowthRateBase* growthRate;
     int catchRate;
     int baseEXP;
-    vector<EvolutionMethodBase> evolutionMethod;
-    vector<SpeciesBase> evolutions;
+    std::vector<EvolutionMethodBase> evolutionMethod;
+    std::vector<SpeciesBase> evolutions;
 
     std::string getName();
     int getId();

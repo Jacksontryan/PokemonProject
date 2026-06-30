@@ -13,10 +13,10 @@ class EvolutionMethodBase;
 
 class EvolutionMethod : public EvolutionMethodBase {
 
+    //EvolutionMethod() : EvolutionMethodBase("", -1) {}
+
     public:
-    EvolutionMethod(const std::string& name, const int id);
-    std::string getName() const;
-    int getId() const override;
+    EvolutionMethod(const std::string& name, int id);
     static EvolutionMethod* instantiateEvolutionMethods();
 
 };

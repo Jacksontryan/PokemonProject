@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="types.png">resources/Pokemon Essentials/Graphics/UI/types.png</file>
+    </qresource>
+</RCC>

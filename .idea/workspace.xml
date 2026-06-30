@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="4" type="long" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="3" type="long" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
@@ -20,6 +20,9 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
+      <config projectName="PokemonProject" targetName="Catch2WithMain" />
+      <config projectName="PokemonProject" targetName="Catch2" />
+      <config projectName="PokemonProject" targetName="Bits" />
       <config projectName="PokemonProject" targetName="PokemonProject" />
     </generated>
   </component>
@@ -29,12 +32,29 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df20f3ac-0ad9-450e-a106-624a6aff05e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ParentClasses/TypeBase.cpp" afterDir="false" />
+    <list default="true" id="df20f3ac-0ad9-450e-a106-624a6aff05e4" name="Changes" comment="Changed some stuff. Really tired, may have fucked some things up">
+      <change afterPath="$PROJECT_DIR$/Bits/Bit.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bits/Bit.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bits/BitManager.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bits/BitManager.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bits/Byte.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bits/Byte.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bits/Main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SmartPointer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources.qrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/MoveData" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/SpeciesBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/SpeciesBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/TypeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/TypeBase.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ParentClasses/TypeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/TypeBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QT Tutorials/MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/MainWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QT Tutorials/MainWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/MainWindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QT Tutorials/QTabScrollWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/QTabScrollWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QT Tutorials/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen1/EvolutionMethod.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/EvolutionMethod.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen1/EvolutionMethod.h" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/EvolutionMethod.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen1/Type.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/Type.cpp" afterDir="false" />
@@ -94,32 +114,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ File.signals.cpp.executor": "Run",
-    "CMake Application.PokemonProject.executor": "Run",
-    "CMake Application.Signals.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "RunOnceActivity.west.config.association.type.startup.service": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/jacksonryan/CLionProjects/PokemonProject/CMakeLists.txt",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/jacksonryan/CLionProjects/PokemonProject/main.cpp",
-    "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "language.cpp.clangd",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ File.Main.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.signals.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.PokemonProject.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.Signals.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/jacksonryan/CLionProjects/PokemonProject/CMakeLists.txt&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/jacksonryan/CLionProjects/PokemonProject/main.cpp&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;language.cpp.clangd&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -129,14 +150,14 @@
       <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 1 Resources/blue_location_data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/QT Tutorials" />
       <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 1 Resources/yellow" />
-      <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 1 Resources/red_blue" />
-      <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 9 Resources/scarlet_violet" />
-      <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 9 Resources/legends_za" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake Application.PokemonProject">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -162,11 +183,44 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Bits" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PokemonProject" TARGET_NAME="Bits" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PokemonProject" RUN_TARGET_NAME="Bits">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Catch2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PokemonProject" TARGET_NAME="Catch2" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Catch2WithMain" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PokemonProject" TARGET_NAME="Catch2WithMain" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PokemonProject" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PokemonProject" TARGET_NAME="PokemonProject" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PokemonProject" RUN_TARGET_NAME="PokemonProject">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PokemonProject" TARGET_NAME="Main.cpp" CONFIG_NAME="Main.cpp">
+      <option name="sourceFile" value="Bits/Main.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="C/C++ File.Main.cpp" />
+      <item itemvalue="CMake Application.Catch2WithMain" />
+      <item itemvalue="CMake Application.Catch2" />
+      <item itemvalue="CMake Application.Bits" />
+      <item itemvalue="CMake Application.PokemonProject" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="C/C++ File.Main.cpp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -186,8 +240,28 @@
       <workItem from="1781669149157" duration="14636000" />
       <workItem from="1782087748156" duration="4066000" />
       <workItem from="1782136023363" duration="3823000" />
-      <workItem from="1782185373396" duration="4544000" />
+      <workItem from="1782185373396" duration="5191000" />
+      <workItem from="1782225899930" duration="6335000" />
+      <workItem from="1782275442449" duration="5915000" />
+      <workItem from="1782318712045" duration="3382000" />
+      <workItem from="1782347265386" duration="11194000" />
+      <workItem from="1782495577969" duration="30000" />
+      <workItem from="1782534737240" duration="2625000" />
+      <workItem from="1782583694447" duration="9352000" />
+      <workItem from="1782623135159" duration="8298000" />
+      <workItem from="1782695591191" duration="9932000" />
+      <workItem from="1782763632876" duration="1669000" />
+      <workItem from="1782766351399" duration="6614000" />
     </task>
+    <task id="LOCAL-00001" summary="Changed some stuff. Really tired, may have fucked some things up">
+      <option name="closed" value="true" />
+      <created>1782189934863</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1782189934863</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +272,10 @@
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
     <isAutomaticBootstrapAfterUpdate value="false" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed some stuff. Really tired, may have fucked some things up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed some stuff. Really tired, may have fucked some things up" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

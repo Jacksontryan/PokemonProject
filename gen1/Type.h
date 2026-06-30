@@ -5,20 +5,24 @@
 #ifndef POKEMONPROJECT_TYPE_H
 #define POKEMONPROJECT_TYPE_H
 
+#include <iostream>
+
 #include "../ParentClasses/TypeBase.h"
 #include <string>
+#include <vector>
 
 class Type : public TypeBase {
 public:
-
-    Type(const std::string name, int id, double* weaknesses);
+    Type() : TypeBase("",-1,new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0}, 15) {
+        std::cout << "Constructing Type"<< std::endl;
+    }
+    Type(const std::string& name, int id, double* weaknesses);
     Type(const Type& other);
-    double getWeakness(Type* type);
     Type &operator=(Type * p);
 
-    double getWeakness(TypeBase *type);
+    double getWeakness(TypeBase *type) override;
 
-    static std::unique_ptr<Type[]> instantiateTypes();
+    static Type* instantiateTypes();
 
 };
 
