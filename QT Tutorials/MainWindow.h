@@ -1,102 +1,66 @@
 //
-// Created by jacksonryan on 6/17/26.
+// Created by jacksonryan on 7/10/26.
 //
 
 #ifndef POKEMONPROJECT_MAINWINDOW_H
 #define POKEMONPROJECT_MAINWINDOW_H
-#include <QStackedWidget>
-#include <QWidget>
-#include <QLabel>
 
-class QPushButton;
-class QTabScrollWidget;
-class QVBoxLayout;
+#include <iostream>
+#include <QWidget>
+#include <QEvent>
+#include <QStackedWidget>
+#include <QResizeEvent>
+
+#include "MainMenu.h"
+#include "Page.h"
 
 class MainWindow : public QWidget{
-private:
+    Q_OBJECT
     QStackedWidget* stack;
-    QWidget* main_menu,
-    *red_menu, *blue_menu, *yellow_menu,
-    *gold_menu, *silver_menu, *crystal_menu,
-    *ruby_menu, *sapphire_menu, *emerald_menu, *fire_red_menu, *leaf_green_menu,
-    *diamond_menu, *pearl_menu, *platinum_menu, *heart_gold_menu, *soul_silver_menu,
-    *black_menu, *white_menu, *black2_menu, *white2_menu,
-    *x_menu, *y_menu, *omega_ruby_menu, *alpha_sapphire_menu,
-    *sun_menu, *moon_menu, *ultra_sun_menu, *ultra_moon_menu, *pikachu_menu, *eevee_menu,
-    *sword_menu, *shield_menu, *brilliant_diamond_menu, *shining_pearl_menu, *legends_arceus_menu,
-    *scarlet_menu, *violet_menu, *legends_za_menu,
-    *page1, *page2, *page3, *page4, *page5, *page6, *page7, *page8, *page9, *page10,
-    *gen1TypeMenu;
+    static constexpr qreal RATIO = 5.0 / 3.0; // width:height = 5:3, so w = h * RATIO
+    bool m_resizing = false;
+    public:
+    MainWindow(int width, int height) {
+        this->setGeometry(this->x(), this->y(), width, height);
+        stack = new QStackedWidget(this);
+        stack->setGeometry(this->x(), this->y(), this->width(), this->height());
+        //Page *page = new Page(this);
+        //stack->addWidget(page);
+        MainMenu*main = new MainMenu();
+        stack->addWidget(main);
+        stack->setCurrentIndex(0);
+        //page->show();
+    }
 
-    QPushButton *pushButton1, *pushButton2, *pushButton3, *pushButton4, *pushButton5, *pushButton6, *pushButton7, *pushButton8, *pushButton9, *pushButton10,
-    *pushButton11, *pushButton12, *pushButton13, *pushButton14, *pushButton15, *pushButton16, *pushButton17, *pushButton18, *pushButton19, *pushButton20,
-    *pushButton21, *pushButton22, *pushButton23, *pushButton24, *pushButton25, *pushButton26, *pushButton27, *pushButton28, *pushButton29, *pushButton30,
-    *pushButton31, *pushButton32, *pushButton33, *pushButton34, *pushButton35, *pushButton36, *pushButton37, *pushButton38,
-    *homeButton, *pushButtonTypes;
+    protected:
+    void resizeEvent(QResizeEvent *event) override {
+        if (m_resizing) {
+            QWidget::resizeEvent(event);
+            return;
+        }
 
-    QVBoxLayout *layout, *windowLayout;
-    QTabScrollWidget *tab;
+        m_resizing = true;
 
-    QLabel *title;
+        QSize newSize = event->size();
+        QSize oldSize = event->oldSize();
 
+        int newW, newH;
 
-    int height;
-    int width;
+        // Determine which dimension changed more, and drive the other off of it
+        if (qAbs(newSize.width() - oldSize.width()) >= qAbs(newSize.height() - oldSize.height())) {
+            newW = newSize.width();
+            newH = static_cast<int>(newW / RATIO);
+        } else {
+            newH = newSize.height();
+            newW = static_cast<int>(newH * RATIO);
+        }
 
-    void createMainMenu();
-    void createRedMenu();
-    void createBlueMenu();
-    void createYellowMenu();
-    void createGen1TypeMenu();
+        resize(newW, newH);
 
-    void createGoldMenu();
-    void createSilverMenu();
-    void createCrystalMenu();
+        m_resizing = false;
 
-    void createRubyMenu();
-    void createSapphireMenu();
-    void createEmeraldMenu();
-    void createFireRedMenu();
-    void createLeafGreenMenu();
-
-    void createDiamondMenu();
-    void createPearlMenu();
-    void createPlatinumMenu();
-    void createHeartGoldMenu();
-    void createSoulSilverMenu();
-
-    void createBlackMenu();
-    void createWhiteMenu();
-    void createBlack2Menu();
-    void createWhite2Menu();
-
-    void createXMenu();
-    void createYMenu();
-    void createOmegaRubyMenu();
-    void createAlphaSapphireMenu();
-
-    void createSunMenu();
-    void createMoonMenu();
-    void createUltraSunMenu();
-    void createUltraMoonMenu();
-    void createPikachuMenu();
-    void createEeveeMenu();
-
-    void createSwordMenu();
-    void createShieldMenu();
-    void createBrilliantDiamondMenu();
-    void createShiningPearlMenu();
-    void createLegendsArceusMenu();
-
-    void createScarletMenu();
-    void createVioletMenu();
-    void createZAMenu();
-
-    void createTypeTiles();
-
-public:
-    MainWindow(int width, int height);
-    ~MainWindow();
+        QWidget::resizeEvent(event);
+    }
 
 };
 

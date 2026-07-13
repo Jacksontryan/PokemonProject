@@ -16,33 +16,26 @@ find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 qt_add_resources(RESOURCES resources.qrc)
 
 add_executable(PokemonProject "QT Tutorials/main.cpp" ${RESOURCES}
-        ParentClasses/PokemonBase.h
-        ParentClasses/SpeciesBase.h
-        ParentClasses/GrowthRateBase.h
-        ParentClasses/EvolutionMethodBase.h
-        ParentClasses/MoveBase.h
-        gen1/Type.h
-        ParentClasses/TypeBase.h
         "QT Tutorials/QTabScrollWidget.cpp"
         "QT Tutorials/QTabScrollWidget.h"
-        "QT Tutorials/MainWindow.cpp"
-        "QT Tutorials/MainWindow.h"
-        gen1/Type.cpp
-        gen1/EvolutionMethod.cpp
-        gen1/EvolutionMethod.h
-        ParentClasses/TypeBase.cpp
         SmartPointer.h
         Main.cpp
-        ParentClasses/EvolutionMethodBase.cpp
-)
-
-add_executable(Bits Bits/Bit.h
-        Bits/Bit.cpp
-        Bits/Byte.h
-        Bits/Byte.cpp
-        Bits/Main.cpp
-        Bits/BitManager.cpp
-        Bits/BitManager.h
+        ParentClasses/Type.cpp
+        ParentClasses/Type.h
+        gen1/Gen1Type.cpp
+        gen1/Gen1Type.h
+        ParentClasses/GrowthRate.cpp
+        ParentClasses/GrowthRate.h
+        ParentClasses/Move.cpp
+        ParentClasses/Move.h
+        "QT Tutorials/FlowLayout.h"
+        "QT Tutorials/FlowLayout.cpp"
+        "QT Tutorials/MainWindow.h"
+        "QT Tutorials/MainWindow.cpp"
+        "QT Tutorials/Page.h"
+        "QT Tutorials/Pages.h"
+        "QT Tutorials/Tab.h"
+        "QT Tutorials/MainMenu.h"
 )
 
 include(FetchContent)

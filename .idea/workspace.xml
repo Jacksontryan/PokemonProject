@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="3" type="long" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="4" type="long" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
     <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
@@ -22,7 +22,6 @@
     <generated>
       <config projectName="PokemonProject" targetName="Catch2WithMain" />
       <config projectName="PokemonProject" targetName="Catch2" />
-      <config projectName="PokemonProject" targetName="Bits" />
       <config projectName="PokemonProject" targetName="PokemonProject" />
     </generated>
   </component>
@@ -32,33 +31,45 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df20f3ac-0ad9-450e-a106-624a6aff05e4" name="Changes" comment="Changed some stuff. Really tired, may have fucked some things up">
-      <change afterPath="$PROJECT_DIR$/Bits/Bit.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bits/Bit.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bits/BitManager.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bits/BitManager.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bits/Byte.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bits/Byte.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bits/Main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SmartPointer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources.qrc" afterDir="false" />
+    <list default="true" id="df20f3ac-0ad9-450e-a106-624a6aff05e4" name="Changes" comment="SmartPointer Working! Going to rework Pokemon classes to use smart pointer. Learning more QT">
+      <change afterPath="$PROJECT_DIR$/ParentClasses/GrowthRate.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ParentClasses/GrowthRate.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ParentClasses/Move.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ParentClasses/Move.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ParentClasses/Type.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ParentClasses/Type.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT Tutorials/FlowLayout.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT Tutorials/FlowLayout.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT Tutorials/MainMenu.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT Tutorials/MainMenu.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT Tutorials/Page.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT Tutorials/Page.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT Tutorials/Pages.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT Tutorials/Tab.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QT Tutorials/Tab.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gen1/Gen1Type.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gen1/Gen1Type.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/MoveData" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/SpeciesBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/SpeciesBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/TypeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/TypeBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/TypeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/TypeBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/GrowthRateBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/MoveBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/PokemonBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/SpeciesBase.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/TypeBase.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/TypeBase.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/QT Tutorials/MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/MainWindow.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QT Tutorials/MainWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/MainWindow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QT Tutorials/QTabScrollWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/QTabScrollWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QT Tutorials/l.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/QT Tutorials/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen1/EvolutionMethod.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/EvolutionMethod.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen1/EvolutionMethod.h" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/EvolutionMethod.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen1/Type.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/Type.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen1/Type.h" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/Type.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SmartPointer.h" beforeDir="false" afterPath="$PROJECT_DIR$/SmartPointer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen1/EvolutionMethod.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen1/EvolutionMethod.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen1/Type.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen1/Type.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,15 +97,10 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ParentClasses/GrowthRateBase.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ParentClasses/MoveBase.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ParentClasses/PokemonBase.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ParentClasses/SpeciesBase.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QT Tutorials/QTabScrollWidget.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QT Tutorials/QTabScrollWidget.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QT Tutorials/main.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/gen1/Type.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SmartPointer.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="sVBl7NLn" />
@@ -114,40 +120,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C/C++ File.Main.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;C/C++ File.signals.cpp.executor&quot;: &quot;Run&quot;,
-    &quot;CMake Application.PokemonProject.executor&quot;: &quot;Run&quot;,
-    &quot;CMake Application.Signals.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/jacksonryan/CLionProjects/PokemonProject/CMakeLists.txt&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/jacksonryan/CLionProjects/PokemonProject/main.cpp&quot;,
-    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;language.cpp.clangd&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ File.Main.cpp.executor": "Run",
+    "C/C++ File.signals.cpp.executor": "Run",
+    "CMake Application.PokemonProject.executor": "Run",
+    "CMake Application.Signals.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/jacksonryan/CLionProjects/PokemonProject/QT Tutorials",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/jacksonryan/CLionProjects/PokemonProject/main.cpp",
+    "org.rust.first.attach.projects": "true",
+    "settings.editor.selected.configurable": "language.cpp.clangd",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/QT Tutorials" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 1 Resources/yellow" />
       <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 1 Resources/red_blue" />
       <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 1 Resources/yellow_learnsets" />
-      <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 1 Resources/blue_location_data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -158,11 +164,6 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.PokemonProject">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="CMakeBoostTestRunConfigurationType" factoryName="Boost Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="BeforeTestRunTask" enabled="true" />
@@ -183,11 +184,6 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Bits" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PokemonProject" TARGET_NAME="Bits" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PokemonProject" RUN_TARGET_NAME="Bits">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Catch2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PokemonProject" TARGET_NAME="Catch2" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -203,6 +199,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PokemonProject" TARGET_NAME="Main.cpp" CONFIG_NAME="Main.cpp">
       <option name="sourceFile" value="Bits/Main.cpp" />
       <method v="2">
@@ -213,7 +214,6 @@
       <item itemvalue="C/C++ File.Main.cpp" />
       <item itemvalue="CMake Application.Catch2WithMain" />
       <item itemvalue="CMake Application.Catch2" />
-      <item itemvalue="CMake Application.Bits" />
       <item itemvalue="CMake Application.PokemonProject" />
     </list>
     <recent_temporary>
@@ -251,7 +251,13 @@
       <workItem from="1782623135159" duration="8298000" />
       <workItem from="1782695591191" duration="9932000" />
       <workItem from="1782763632876" duration="1669000" />
-      <workItem from="1782766351399" duration="6614000" />
+      <workItem from="1782766351399" duration="20464000" />
+      <workItem from="1782874726977" duration="1120000" />
+      <workItem from="1782922191726" duration="4317000" />
+      <workItem from="1782952640219" duration="13066000" />
+      <workItem from="1783093626405" duration="20144000" />
+      <workItem from="1783466302851" duration="10079000" />
+      <workItem from="1783700367948" duration="24094000" />
     </task>
     <task id="LOCAL-00001" summary="Changed some stuff. Really tired, may have fucked some things up">
       <option name="closed" value="true" />
@@ -261,7 +267,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782189934863</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SmartPointer Working! Going to rework Pokemon classes to use smart pointer. Learning more QT">
+      <option name="closed" value="true" />
+      <created>1782795430129</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1782795430129</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +289,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed some stuff. Really tired, may have fucked some things up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed some stuff. Really tired, may have fucked some things up" />
+    <MESSAGE value="SmartPointer Working! Going to rework Pokemon classes to use smart pointer. Learning more QT" />
+    <option name="LAST_COMMIT_MESSAGE" value="SmartPointer Working! Going to rework Pokemon classes to use smart pointer. Learning more QT" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

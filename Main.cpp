@@ -6,25 +6,29 @@
 #include <ostream>
 
 #include "SmartPointer.h"
-#include "gen1/Type.h"
+#include "ParentClasses/GrowthRate.h"
 
-int main() {
+int main0() {
 
-    std::cout << "Creating types" << std::endl;
+    SmartPointer<int> ptr = SmartPointer<int>::dynamicPointer();
 
-    Type* types = Type::instantiateTypes();
+    int x = 5;
+    int y = 20;
+    int z = 30;
+    int a = x + y + z;
 
-    std::cout << "Types created" << std::endl;
+    ptr.addFront(x);
 
-    SmartPointer<Type> normal = SmartPointer<Type>::referencePointer(types[0]);
+    ptr.addFront(y);
 
-    std::cout << "Normal pointer created" << std::endl;
+    ptr.addBack(z);
 
-    std::cout << "Types deleted" << std::endl;
+    ptr.addBack(a);
 
-    std::cout << normal.get().getName() << std::endl;
-
-    delete[] types;
+    std::cout << ptr[0] << std::endl;
+    std::cout << ptr[1] << std::endl;
+    std::cout << ptr[2] << std::endl;
+    std::cout << ptr[3] << std::endl;
 
     return 0;
 }
