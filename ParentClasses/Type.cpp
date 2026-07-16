@@ -7,6 +7,12 @@
 #include <iostream>
 #include <utility>
 
+Type::Type() : weaknesses(SmartPointer<double>::arrayPointer(1)) {
+    this->id = 0;
+    this->name = "Normal";
+    this->size = 0;
+}
+
 Type::Type(std::string name, int id, double weaknesses[], size_t size) : name(std::move(name)), id(id), weaknesses(SmartPointer<double>::arrayPointer(weaknesses, size)), size(size) {
 
     std::cout << "Constructor called for Type: " << this->name << std::endl;

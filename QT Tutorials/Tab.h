@@ -9,6 +9,10 @@
 #include <QVBoxLayout>
 #include <QLabel>
 #include <iostream>
+#include <QEvent>
+#include <QResizeEvent>
+
+#include "GameButton.h"
 
 class Tab : public QWidget{
     Q_OBJECT
@@ -31,6 +35,11 @@ public:
         this->layout = new QVBoxLayout(this);
 
         title = new QLabel(("Generation " + std::to_string(gen)).data(),this);
+
+        if (gen == -1) {
+            title->setText("Home");
+        }
+
         title->setStyleSheet("background-color: orange;");
         title->setAlignment(Qt::AlignCenter);
         layer1 = new QWidget(this);
@@ -90,14 +99,35 @@ public:
 
         layer4->layout()->addWidget(pokedexButton);
 
+        pokedexButton->setFixedSize(100,100);
+        typeChartButton->setFixedSize(100,100);
+
+        if (gen == -1) {
+            QLabel *label = new QLabel();
+            label->setFixedSize(100, 100);
+            layer1->layout()->addWidget(label);
+
+            QLabel *label2 = new QLabel();
+            label->setFixedSize(100, 100);
+            layer2->layout()->addWidget(label2);
+
+            QLabel *label3 = new QLabel();
+            label->setFixedSize(100, 100);
+            layer3->layout()->addWidget(label3);
+
+        }
+
         std::cout << "Bottom Buttons set" << std::endl;
 
     }
 
-    void addGame(std::string gameName) {
+    void addGame(std::string gameName, std::string url) {
         int row = this->gameButtons.size() / 2;
 
-        QPushButton *gameButton = new QPushButton(gameName.data(), this);
+        GameButton* gameButton = new GameButton(this, gameName, url);
+        gameButton->setFixedSize(100, 100);
+        gameButton->setIconSize(QSize(100, 100));
+        //QPushButton *gameButton = new QPushButton(gameName.data(), this);
 
         if (row == 0) {
             layer1->layout()->addWidget(gameButton);
@@ -113,22 +143,14 @@ public:
         std::cout << "Generation 1 tab" << std::endl;
 
         Tab *tab = new Tab(1);
-        tab->layer1->layout()->addWidget(new QWidget());
-        tab->addGame("Red");
-        tab->layer1->layout()->addWidget(new QWidget());
-        tab->addGame("Blue");
-        tab->layer1->layout()->addWidget(new QLabel());
-        tab->layer2->layout()->addWidget(new QWidget());
-        tab->addGame("Yellow");
+        tab->addGame("Red", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/CHARIZARD.png");
+        tab->addGame("Blue", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/BLASTOISE.png");
+        tab->addGame("Yellow", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/PIKACHU.png");
 
-        tab->layer2->layout()->addWidget(new QWidget());
+        QLabel *label = new QLabel();
+        label->setFixedSize(100, 100);
 
-        tab->layer2->layout()->addWidget(new QWidget());
-
-        tab->layer2->layout()->addWidget(new QWidget());
-
-        tab->layer3->layout()->addWidget(new QLabel());
-        tab->layer3->layout()->addWidget(new QWidget());
+        tab->layer3->layout()->addWidget(label);
 
         return tab;
 
@@ -137,14 +159,14 @@ public:
     static Tab* gen2() {
         std::cout << "Generation 2 tab" << std::endl;
         Tab *tab = new Tab(2);
-        tab->addGame("Gold");
-        tab->addGame("Silver");
-        tab->addGame("Crystal");
+        tab->addGame("Gold", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/HOOH.png");
+        tab->addGame("Silver", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/LUGIA.png");
+        tab->addGame("Crystal", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/SUICUNE.png");
 
-        tab->layer2->layout()->addWidget(new QWidget());
+        QLabel *label = new QLabel();
+        label->setFixedSize(100, 100);
 
-        tab->layer3->layout()->addWidget(new QLabel());
-        tab->layer3->layout()->addWidget(new QWidget());
+        tab->layer3->layout()->addWidget(label);
 
         return tab;
 
@@ -153,13 +175,11 @@ public:
     static Tab* gen3() {
         std::cout << "Generation 3 tab" << std::endl;
         Tab *tab = new Tab(3);
-        tab->addGame("Ruby");
-        tab->addGame("Sapphire");
-        tab->addGame("Emerald");
-        tab->addGame("Fire Red");
-        tab->addGame("Leaf Green");
-
-        tab->layer3->layout()->addWidget(new QWidget());
+        tab->addGame("Ruby", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/GROUDON.png");
+        tab->addGame("Sapphire", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/KYOGRE.png");
+        tab->addGame("Emerald", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/RAYQUAZA.png");
+        tab->addGame("Fire\nRed", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/CHARIZARD.png");
+        tab->addGame("Leaf\nGreen", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/VENUSAUR.png");
 
         return tab;
     }
@@ -167,11 +187,11 @@ public:
     static Tab* gen4() {
         std::cout << "Generation 4 tab" << std::endl;
         Tab *tab = new Tab(4);
-        tab->addGame("Diamond");
-        tab->addGame("Pearl");
-        tab->addGame("Platinum");
-        tab->addGame("Heart Gold");
-        tab->addGame("Soul Silver");
+        tab->addGame("Diamond", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/DIALGA.png");
+        tab->addGame("Pearl", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/PALKIA.png");
+        tab->addGame("Platinum", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/GIRATINA_1.png");
+        tab->addGame("Heart\nGold", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/HOOH.png");
+        tab->addGame("Soul\nSilver", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/LUGIA.png");
 
         tab->layer3->layout()->addWidget(new QWidget());
 
@@ -183,13 +203,15 @@ public:
         std::cout << "Generation 5 tab" << std::endl;
 
         Tab *tab = new Tab(5);
-        tab->addGame("Black");
-        tab->addGame("White");
-        tab->addGame("Black 2");
-        tab->addGame("White 2");
+        tab->addGame("Black", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/RESHIRAM.png");
+        tab->addGame("White", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/ZEKROM.png");
+        tab->addGame("Black 2", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/KYUREM_2.png");
+        tab->addGame("White 2", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/KYUREM_1.png");
 
-        tab->layer3->layout()->addWidget(new QLabel());
-        tab->layer3->layout()->addWidget(new QWidget());
+        QLabel *label = new QLabel();
+        label->setFixedSize(100, 100);
+
+        tab->layer3->layout()->addWidget(label);
 
         return tab;
     }
@@ -197,24 +219,26 @@ public:
     static Tab* gen6() {
         std::cout << "Generation 6 tab" << std::endl;
         Tab *tab = new Tab(6);
-        tab->addGame("X");
-        tab->addGame("Y");
-        tab->addGame("Omega Ruby");
-        tab->addGame("Alpha Sapphire");
-        tab->layer3->layout()->addWidget(new QLabel());
-        tab->layer3->layout()->addWidget(new QWidget());
+        tab->addGame("X", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/XERNEAS.png");
+        tab->addGame("Y", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/YVELTAL.png");
+        tab->addGame("Omega\nRuby", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/GROUDON_1.png");
+        tab->addGame("Alpha\nSapphire", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/KYOGRE_1.png");
+        QLabel *label = new QLabel();
+        label->setFixedSize(86, 86);
+
+        tab->layer3->layout()->addWidget(label);
         return tab;
     }
 
     static Tab* gen7() {
         std::cout << "Generation 7 tab" << std::endl;
         Tab *tab = new Tab(7);
-        tab->addGame("Sun");
-        tab->addGame("Moon");
-        tab->addGame("Ultra Sun");
-        tab->addGame("Ultra Moon");
-        tab->addGame("Let's Go Pikachu");
-        tab->addGame("Let's Go Eevee");
+        tab->addGame("Sun", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/SOLGALEO.png");
+        tab->addGame("Moon", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/LUNALA.png");
+        tab->addGame("Ultra\nSun", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/NECROZMA_1.png");
+        tab->addGame("Ultra\nMoon", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/NECROZMA_2.png");
+        tab->addGame("Let's Go\nPikachu", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/PIKACHU.png");
+        tab->addGame("Let's Go\nEevee", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/EEVEE.png");
 
         tab->layer3->layout()->addWidget(new QWidget());
 
@@ -225,11 +249,11 @@ public:
     static Tab* gen8() {
         std::cout << "Generation 8 tab" << std::endl;
         Tab *tab = new Tab(8);
-        tab->addGame("Sword");
-        tab->addGame("Shield");
-        tab->addGame("Brilliant Diamond");
-        tab->addGame("Shining Pearl");
-        tab->addGame("Legends Arceus");
+        tab->addGame("Sword", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/ZACIAN_1.png");
+        tab->addGame("Shield", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/ZAMAZENTA_1.png");
+        tab->addGame("Brilliant\nDiamond", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/DIALGA.png");
+        tab->addGame("Shining\nPearl", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/PALKIA.png");
+        tab->addGame("Legends\nArceus", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/ARCEUS.png");
 
         tab->layer3->layout()->addWidget(new QWidget());
 
@@ -240,17 +264,83 @@ public:
     static Tab* gen9() {
         std::cout << "Generation 9 tab" << std::endl;
         Tab *tab = new Tab(9);
-        tab->addGame("Scarlet");
-        tab->addGame("Violet");
-        tab->addGame("Legends ZA");
+        tab->addGame("Scarlet", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/KORAIDON.png");
+        tab->addGame("Violet", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/MIRAIDON.png");
+        tab->addGame("Legends\nZA", ":/resources/Pokemon-Essentials/Graphics/Pokemon/Front/FLOETTE_5.png");
 
-        tab->layer2->layout()->addWidget(new QWidget());
-        tab->layer3->layout()->addWidget(new QLabel());
-        tab->layer3->layout()->addWidget(new QWidget());
+        QLabel *label = new QLabel();
+        label->setFixedSize(100, 100);
+
+        tab->layer3->layout()->addWidget(label);
 
         return tab;
 
     }
+
+    static Tab* homeTab() {
+        std::cout << "Home tab" << std::endl;
+        Tab *tab = new Tab();
+        QLabel *label = new QLabel();
+        label->setFixedSize(100, 100);
+        tab->layer1->layout()->addWidget(label);
+
+        QLabel *label2 = new QLabel();
+        label->setFixedSize(100, 100);
+        tab->layer2->layout()->addWidget(label2);
+
+        QLabel *label3 = new QLabel();
+        label->setFixedSize(100, 100);
+        tab->layer3->layout()->addWidget(label3);
+
+        return tab;
+    }
+
+protected:
+
+    void resizeEvent(QResizeEvent *event) override {
+        double oldWidthRatio = 84.0/1000;
+        double oldHeightRatio = 84.0/600;
+
+        int screenHeight = event->size().height();
+        int screenWidth = event->size().width();
+
+        int newWidth = oldWidthRatio * screenWidth;
+
+        std::cout << "New width: " << newWidth << std::endl;
+
+        int numButtons = gameButtons.size();
+
+        std::cout << "Number of buttons: " << numButtons << std::endl;
+
+        for (int i = 0; i < numButtons; i++) {
+            gameButtons[i]->setFixedSize(newWidth, newWidth);
+            gameButtons[i]->setIconSize(QSize(newWidth, newWidth));
+        }
+
+        std::cout << "Button size fixed" << std::endl;
+
+        if (numButtons == 0) {
+            layer1->layout()->itemAt(0)->widget()->setFixedSize(QSize(newWidth, newWidth));
+            layer2->layout()->itemAt(0)->widget()->setFixedSize(QSize(newWidth, newWidth));
+        }
+
+        if (gameButtons.size() < 5) {
+            layer3->layout()->itemAt(0)->widget()->setFixedSize(QSize(newWidth, newWidth));
+        }
+
+        this->pokedexButton->setFixedSize(newWidth, newWidth);
+        this->typeChartButton->setFixedSize(newWidth, newWidth);
+
+        std::cout << "Label Size fixed" << std::endl;
+
+        std::cout << "Width1: " << layer1->size().width() << " Height1: " << layer1->size().height() << std::endl;
+        std::cout << "Width2: " << layer2->size().width() << " Height2: " << layer2->size().height() << std::endl;
+        std::cout << "Width3: " << layer3->size().width() << " Height3: " << layer3->size().height() << std::endl;
+        std::cout << "Width4: " << layer4->size().width() << " Height4: " << layer4->size().height() << std::endl;
+
+    }
+
+
 
 };
 

@@ -10,10 +10,31 @@
 #include "Type.h"
 
 class Move {
+
+    protected:
     std::string name;
     int damage;
-    int accuracy;
     Type type;
+
+    public:
+    Move() {
+        this->name = "Struggle";
+        this->damage = 50;
+        this->type = Type();
+    }
+
+    std::string getName() {
+        return this->name;
+    }
+
+    [[nodiscard]] int getDamage() const {
+        return this->damage;
+    }
+
+    Type getType() {
+        return this->type;
+    }
+
 };
 
 

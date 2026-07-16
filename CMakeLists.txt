@@ -36,6 +36,14 @@ add_executable(PokemonProject "QT Tutorials/main.cpp" ${RESOURCES}
         "QT Tutorials/Pages.h"
         "QT Tutorials/Tab.h"
         "QT Tutorials/MainMenu.h"
+        "QT Tutorials/Tab.cpp"
+        "QT Tutorials/MainMenu.cpp"
+        "QT Tutorials/GameButton.h"
+        "QT Tutorials/GameButton.cpp"
+        dbg.h
+        dbg.cpp
+        "QT Tutorials/math.h"
+        gen1/Gen1Move.h
 )
 
 include(FetchContent)

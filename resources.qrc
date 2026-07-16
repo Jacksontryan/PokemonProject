@@ -1,5 +1,40 @@
 <RCC>
     <qresource prefix="/images">
-        <file alias="types.png">resources/Pokemon Essentials/Graphics/UI/types.png</file>
+        <file alias="types.png">resources/Pokemon-Essentials/Graphics/UI/types.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/CHARIZARD.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/BLASTOISE.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/PIKACHU.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/HOOH.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/LUGIA.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/SUICUNE.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/GROUDON.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/KYOGRE.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/RAYQUAZA.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/VENUSAUR.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/DIALGA.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/PALKIA.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/GIRATINA_1.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/RESHIRAM.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/ZEKROM.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/RESHIRAM.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/KYUREM_1.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/KYUREM_2.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/XERNEAS.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/YVELTAL.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/GROUDON_1.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/KYOGRE_1.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/SOLGALEO.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/LUNALA.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/NECROZMA_1.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/NECROZMA_2.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/EEVEE.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/ZACIAN_1.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/ZAMAZENTA_1.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/ARCEUS.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/KORAIDON.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/MIRAIDON.png</file>
+        <file>resources/Pokemon-Essentials/Graphics/Pokemon/Front/FLOETTE_5.png</file>
     </qresource>
 </RCC>

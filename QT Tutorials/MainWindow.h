@@ -19,20 +19,30 @@ class MainWindow : public QWidget{
     QStackedWidget* stack;
     static constexpr qreal RATIO = 5.0 / 3.0; // width:height = 5:3, so w = h * RATIO
     bool m_resizing = false;
+    QVBoxLayout* layout;
     public:
     MainWindow(int width, int height) {
         this->setGeometry(this->x(), this->y(), width, height);
+        this->setMinimumSize(width, height);
         stack = new QStackedWidget(this);
         stack->setGeometry(this->x(), this->y(), this->width(), this->height());
+        this->layout = new QVBoxLayout(this);
+        this->layout->addWidget(stack);
         //Page *page = new Page(this);
         //stack->addWidget(page);
         MainMenu*main = new MainMenu();
         stack->addWidget(main);
         stack->setCurrentIndex(0);
         //page->show();
+        this->setMinimumWidth(this->minimumHeight() / 3 * 5);
+        std::cout << std::endl << std::endl << std::endl << std::endl << this->minimumWidth() << std::endl;
+        std::cout << this->minimumHeight() << std::endl << std::endl << std::endl << std::endl << std::endl << std::endl;
+
     }
 
     protected:
+
+    //written by AI. Going to rewrite later
     void resizeEvent(QResizeEvent *event) override {
         if (m_resizing) {
             QWidget::resizeEvent(event);
@@ -46,7 +56,6 @@ class MainWindow : public QWidget{
 
         int newW, newH;
 
-        // Determine which dimension changed more, and drive the other off of it
         if (qAbs(newSize.width() - oldSize.width()) >= qAbs(newSize.height() - oldSize.height())) {
             newW = newSize.width();
             newH = static_cast<int>(newW / RATIO);

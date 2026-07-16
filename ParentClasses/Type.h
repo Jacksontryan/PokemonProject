@@ -16,6 +16,7 @@ protected:
     SmartPointer<double> weaknesses;
     size_t size;
 public:
+    Type();
     Type(std::string name, int id, double weaknesses[], size_t size);
 
     virtual ~Type()= default;

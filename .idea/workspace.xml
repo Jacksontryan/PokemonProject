@@ -31,45 +31,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df20f3ac-0ad9-450e-a106-624a6aff05e4" name="Changes" comment="SmartPointer Working! Going to rework Pokemon classes to use smart pointer. Learning more QT">
-      <change afterPath="$PROJECT_DIR$/ParentClasses/GrowthRate.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParentClasses/GrowthRate.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParentClasses/Move.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParentClasses/Move.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParentClasses/Type.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParentClasses/Type.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT Tutorials/FlowLayout.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT Tutorials/FlowLayout.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT Tutorials/MainMenu.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT Tutorials/MainMenu.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT Tutorials/Page.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT Tutorials/Page.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT Tutorials/Pages.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT Tutorials/Tab.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT Tutorials/Tab.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen1/Gen1Type.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen1/Gen1Type.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="df20f3ac-0ad9-450e-a106-624a6aff05e4" name="Changes" comment="Not a lot of progress. Tried making it easier to read. Figured out a segfault error all on my own without AI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/EvolutionMethodBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/GrowthRateBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/MoveBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/PokemonBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/SpeciesBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/TypeBase.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/TypeBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QT Tutorials/MainWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/MainWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/Move.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/Move.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/Type.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/Type.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParentClasses/Type.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/Type.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QT Tutorials/MainWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/MainWindow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QT Tutorials/l.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/QT Tutorials/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SmartPointer.h" beforeDir="false" afterPath="$PROJECT_DIR$/SmartPointer.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen1/EvolutionMethod.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen1/EvolutionMethod.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen1/Type.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen1/Type.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QT Tutorials/Tab.h" beforeDir="false" afterPath="$PROJECT_DIR$/QT Tutorials/Tab.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/resources.qrc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +87,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3EpoAcN46c2kR78wA9OH4YGDVMf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -139,7 +113,7 @@
     "cidr.known.project.marker": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/jacksonryan/CLionProjects/PokemonProject/QT Tutorials",
+    "last_opened_file_path": "/home/jacksonryan/CLionProjects/PokemonProject/resources/Pokemon Essentials/Graphics/Pokemon",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/jacksonryan/CLionProjects/PokemonProject/main.cpp",
     "org.rust.first.attach.projects": "true",
@@ -149,11 +123,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/Pokemon Essentials/Graphics/Pokemon" />
       <recent name="$PROJECT_DIR$/QT Tutorials" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 1 Resources/yellow" />
       <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 1 Resources/red_blue" />
-      <recent name="$PROJECT_DIR$/cmake-build-debug/resources/Gen 1 Resources/yellow_learnsets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -257,7 +231,7 @@
       <workItem from="1782952640219" duration="13066000" />
       <workItem from="1783093626405" duration="20144000" />
       <workItem from="1783466302851" duration="10079000" />
-      <workItem from="1783700367948" duration="24094000" />
+      <workItem from="1783700367948" duration="61951000" />
     </task>
     <task id="LOCAL-00001" summary="Changed some stuff. Really tired, may have fucked some things up">
       <option name="closed" value="true" />
@@ -275,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782795430129</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Not a lot of progress. Tried making it easier to read. Figured out a segfault error all on my own without AI">
+      <option name="closed" value="true" />
+      <created>1783911673980</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783911673980</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +272,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changed some stuff. Really tired, may have fucked some things up" />
     <MESSAGE value="SmartPointer Working! Going to rework Pokemon classes to use smart pointer. Learning more QT" />
-    <option name="LAST_COMMIT_MESSAGE" value="SmartPointer Working! Going to rework Pokemon classes to use smart pointer. Learning more QT" />
+    <MESSAGE value="Not a lot of progress. Tried making it easier to read. Figured out a segfault error all on my own without AI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Not a lot of progress. Tried making it easier to read. Figured out a segfault error all on my own without AI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
