@@ -1,0 +1,151 @@
+001, Bulbasaur, Seed, grass, poison, 0.7, 6.9, 45, 64, medium slow, 45, 49, 49, 65, 45, {16}, {Ivysaur}
+002, Ivysaur, Seed, grass, poison, 1.0, 13.0, 45, 141, medium slow, 60, 62, 63, 80, 60, {32}, {Venusaur}
+003, Venusaur, Seed, grass, poison, 2.0, 100.0, 45, 208, medium slow, 80, 82, 83, 100, 80, {}, {}
+004, Charmander, Lizard, fire, null, 0.6, 8.5, 45, 65, medium slow, 39, 52, 43, 50, 65, {16}, {Charmeleon}
+005, Charmeleon, Flame, fire, null, 1.1, 19.0, 45, 142, medium slow, 58, 64, 58, 65, 80, {36}, {Charizard}
+006, Charizard, Flame, fire, flying, 1.7, 90.5, 45, 209, medium slow, 78, 84, 78, 85, 100, {}, {}
+007, Squirtle, Tiny Turtle, water, null, 0.5, 9.0, 45, 66, medium slow, 44, 48, 65, 50, 43, {16}, {Wartortle}
+008, Wartortle, Turtle, water, null, 1.0, 22.5, 45, 143, medium slow, 59, 63, 80, 65, 58, {36}, {Blastoise}
+009, Blastoise, Shellfish, water, null, 1.6, 85.5, 45, 210, medium slow, 79, 83, 100, 85, 78, {}, {}
+010, Caterpie, Worm, bug, null, 0.3, 2.9, 255, 53, medium fast, 45, 30, 35, 20, 45, {7}, {Metapod}
+011, Metapod, Cocoon, bug, null, 0.7, 9.9, 120, 72, medium fast, 50, 20, 55, 25, 30, {10}, {Butterfree}
+012, Butterfree, Butterfly, bug, flying, 1.1, 32.0, 45, 160, medium fast, 60, 45, 50, 80, 70, {}, {}
+013, Weedle, Hairy Bug, bug, poison, 0.3, 3.2, 255, 52, medium fast, 40, 35, 30, 20, 50, {7}, {Kakuna}
+014, Kakuna, Cocoon, bug, poison, 0.6, 10.0, 120, 71, medium fast, 45, 25, 50, 25, 35, {10}, {Beedrill}
+015, Beedrill, Poison Bee, bug, poison, 1.0, 29.5, 45, 159, medium fast, 65, 80, 40, 45, 75, {}, {}
+016, Pidgey, Tiny Bird, normal, flying, 0.3, 1.8, 255, 55, medium slow, 40, 45, 40, 35, 56, {18}, {Pidgeotto}
+017, Pidgeotto, Bird, normal, flying, 1.1, 30.0, 120, 113, medium slow, 63, 60, 55, 50, 71, {36}, {Pidgeot}
+018, Pidgeot, Bird, normal, flying, 1.5, 39.5, 45, 172, medium slow, 83, 80, 75, 70, 91, {}, {}
+019, Rattata, Mouse, normal, null, 0.3, 3.5, 255, 57, medium fast, 30, 56, 35, 25, 72, {20}, {Raticate}
+020, Raticate, Mouse, normal, null, 0.7, 18.5, 90, 116, medium fast, 55, 81, 60, 50, 97, {}, {}
+021, Spearow, Tiny Bird, normal, flying, 0.3, 2.0, 255, 58, medium fast, 40, 60, 30, 31, 70, {20}, {Fearow}
+022, Fearow, Beak, normal, flying, 1.2, 38.0, 90, 162, medium fast, 65, 90, 65, 61, 100, {}, {}
+023, Ekans, Snake, poison, null, 2.0, 6.9, 255, 62, medium fast, 35, 60, 44, 40, 55, {22}, {Arbok}
+024, Arbok, Cobra, poison, null, 3.5, 65.0, 90, 147, medium fast, 60, 85, 69, 65, 80, {}, {}
+025, Pikachu, Mouse, electric, null, 0.4, 6.0, 190, 82, medium fast, 35, 55, 30, 50, 90, {thunder}, {Raichu}
+026, Raichu, Mouse, electric, null, 0.8, 30.0, 75, 122, medium fast, 60, 90, 55, 90, 100, {}, {}
+027, Sandshrew, Mouse, ground, null, 0.6, 12.0, 255, 93, medium fast, 50, 75, 85, 30, 40, {22}, {Sandslash}
+028, Sandslash, Mouse, ground, null, 1.0, 29.5, 90, 163, medium fast, 75, 100, 110, 55, 65, {}, {}
+029, Nidoran♀, Poison Pin, poison, null, 0.4, 7.0, 235, 59, medium slow, 55, 47, 52, 40, 41, {16}, {Nidorina}
+030, Nidorina, Poison Pin, poison, null, 0.8, 20.0, 120, 117, medium slow, 70, 62, 67, 55, 56, {moon}, {Nidoqueen}
+031, Nidoqueen, Drill, poison, ground, 1.3, 60.0, 45, 194, medium slow, 90, 82, 87, 75, 76, {}, {}
+032, Nidoran♂, Poison Pin, poison, null, 0.5, 9.0, 235, 60, medium slow, 46, 57, 40, 40, 50, {16}, {Nidorino}
+033, Nidorino, Poison Pin, poison, null, 0.9, 19.5, 120, 118, medium slow, 61, 72, 57, 55, 65, {moon}, {Nidoking}
+034, Nidoking, Drill, poison, ground, 1.4, 62.0, 45, 195, medium slow, 81, 92, 77, 75, 85, {}, {}
+035, Clefairy, Fairy, normal, null, 0.6, 7.5, 150, 68, fast, 70, 45, 48, 60, 35, {moon}, {Clefable}
+036, Clefable, Fairy, normal, null, 1.3, 40.0, 25, 129, fast, 95, 70, 73, 85, 60, {}, {}
+037, Vulpix, Fox, fire, null, 0.6, 9.9, 190, 63, medium fast, 38, 41, 40, 65, 65, {fire}, {Ninetales}
+038, Ninetales, Fox, fire, null, 1.1, 19.9, 75, 178, medium fast, 73, 76, 75, 100, 100, {}, {}
+039, Jigglypuff, Balloon, normal, null, 0.5, 5.5, 170, 76, fast, 115, 45, 20, 25, 20, {moon}, {Wigglytuff}
+040, Wigglytuff, Balloon, normal, null, 1.0, 12.0, 50, 109, fast, 140, 70, 45, 50, 45, {}, {}
+041, Zubat, Bat, poison, flying, 0.8, 7.5, 255, 54, medium fast, 40, 45, 35, 40, 55, {22}, {Golbat}
+042, Golbat, Bat, poison, flying, 1.6, 55.0, 90, 171, medium fast, 75, 80, 70, 75, 90, {}, {}
+043, Oddish, Weed, grass, poison, 0.5, 5.4, 255, 78, medium slow, 45, 50, 55, 75, 30, {21}, {Gloom}
+044, Gloom, Weed, grass, poison, 0.8, 8.6, 120, 132, medium slow, 60, 65, 70, 85, 40, {leaf}, {Vileplume}
+045, Vileplume, Flower, grass, poison, 1.2, 18.6, 45, 184, medium slow, 75, 80, 85, 100, 50, {}, {}
+046, Paras, Mushroom, bug, grass, 0.3, 5.4, 190, 70, medium fast, 35, 70, 55, 55, 25, {24}, {Parasect}
+047, Parasect, Mushroom, bug, grass, 1.0, 29.5, 75, 128, medium fast, 60, 95, 80, 80, 30, {}, {}
+048, Venonat, Insect, bug, poison, 1.0, 30.0, 190, 75, medium fast, 60, 55, 50, 40, 45, {31}, {Venomoth}
+049, Venomoth, Poison Moth, bug, poison, 1.5, 12.5, 75, 138, medium fast, 70, 65, 60, 90, 90, {}, {}
+050, Diglett, Mole, ground, null, 0.2, 0.8, 255, 81, medium fast, 10, 55, 25, 45, 95, {26}, {Dugtrio}
+051, Dugtrio, Mole, ground, null, 0.7, 33.3, 50, 153, medium fast, 35, 80, 50, 70, 120, {}, {}
+052, Meowth, Scratch Cat, normal, null, 0.4, 4.2, 255, 69, medium fast, 40, 45, 35, 40, 90, {28}, {Persian}
+053, Persian, Classy Cat, normal, null, 1.0, 32.0, 90, 148, medium fast, 65, 70, 60, 65, 115, {}, {}
+054, Psyduck, Duck, water, null, 0.8, 19.6, 190, 80, medium fast, 50, 52, 48, 50, 55, {33}, {Golduck}
+055, Golduck, Duck, water, null, 1.7, 76.6, 75, 174, medium fast, 80, 82, 78, 80, 85, {}, {}
+056, Mankey, Pig Monkey, fighting, null, 0.5, 28.0, 190, 74, medium fast, 40, 80, 35, 35, 70, {28}, {Primeape}
+057, Primeape, Pig Monkey, fighting, null, 1.0, 32.0, 75, 149, medium fast, 65, 105, 60, 60, 95, {fire}, {Growlithe}
+058, Growlithe, Puppy, fire, null, 0.7, 19.0, 190, 91, slow, 55, 70, 45, 50, 60, {}, {}
+059, Arcanine, Legendary, fire, null, 1.9, 155.0, 75, 213, slow, 90, 110, 80, 80, 95, {}, {}
+060, Poliwag, Tadpole, water, null, 0.6, 12.4, 255, 77, medium slow, 40, 50, 40, 40, 90, {25}, {Poliwhirl}
+061, Poliwhirl, Tadpole, water, null, 1.0, 20.0, 120, 131, medium slow, 65, 65, 65, 50, 90, {water}, {Poliwrath}
+062, Poliwrath, Tadpole, water, fighting, 1.3, 54.0, 45, 185, medium slow, 90, 85, 95, 70, 70, {}, {}
+063, Abra, Psi, psychic, null, 0.9, 19.5, 200, 73, medium slow, 25, 20, 15, 105, 90, {16}, {Kadabra}
+064, Kadabra, Psi, psychic, null, 1.3, 56.5, 100, 145, medium slow, 40, 35, 30, 120, 105, {trade}, {Alakazam}
+065, Alakazam, Psi, psychic, null, 1.5, 48.0, 50, 186, medium slow, 55, 50, 45, 135, 120, {}, {}
+066, Machop, Superpower, fighting, null, 0.8, 19.5, 180, 88, medium slow, 70, 80, 50, 35, 35, {28}, {Machoke}
+067, Machoke, Superpower, fighting, null, 1.5, 70.5, 90, 146, medium slow, 80, 100, 70, 50, 45, {trade}, {Machamp}
+068, Machamp, Superpower, fighting, null, 1.6, 130.0, 45, 193, medium slow, 90, 130, 80, 65, 55, {}, {}
+069, Bellsprout, Flower, grass, poison, 0.7, 4.0, 255, 84, medium slow, 50, 75, 35, 70, 40, {21}, {Weepinbell}
+070, Weepinbell, Flycatcher, grass, poison, 1.0, 6.4, 120, 151, medium slow, 65, 90, 50, 85, 55, {leaf}, {Victreebel}
+071, Victreebel, Flycatcher, grass, poison, 1.7, 15.5, 45, 191, medium slow, 80, 105, 65, 100, 70, {}, {}
+072, Tentacool, Jellyfish, water, poison, 0.9, 45.5, 190, 105, slow, 40, 40, 35, 100, 70, {30}, {Tentacruel}
+073, Tentacruel, Jellyfish, water, poison, 1.6, 55.0, 60, 180, slow, 80, 70, 65, 80, 100, {}, {}
+074, Geodude, Rock, rock, ground, 0.4, 20.0, 255, 86, medium slow, 40, 80, 100, 30, 20, {25}, {Graveler}
+075, Graveler, Rock, rock, ground, 1.0, 105.0, 120, 134, medium slow, 55, 95, 115, 45, 35, {trade}, {Golem}
+076, Golem, Megaton, rock, ground, 1.4, 300.0, 45, 177, medium slow, 80, 110, 130, 55, 45, {}, {}
+077, Ponyta, Fire Horse, fire, null, 1.0, 30.0, 190, 152, medium fast, 50, 85, 55, 65, 90, {40}, {Rapidash}
+078, Rapidash, Fire Horse, fire, null, 1.7, 95.0, 60, 192, medium fast, 65, 100, 70, 80, 105, {}, {}
+079, Slowpoke, Dopey, water, psychic, 1.2, 36.0, 190, 99, medium fast, 90, 65, 65, 40, 15, {37}, {Slowbro}
+080, Slowbro, Hermit Crab, water, psychic, 1.6, 78.5, 75, 164, medium fast, 95, 75, 110, 80, 30, {}, {}
+081, Magnemite, Magnet, electric, null, 0.3, 6.0, 190, 89, medium fast, 25, 35, 70, 95, 45, {30}, {Magneton}
+082, Magneton, Magnet, electric, null, 1.0, 60.0, 60, 161, medium fast, 50, 60, 95, 120, 70, {}, {}
+083, Farfetch'd, Wild Duck, normal, flying, 0.8, 15.0, 45, 94, medium fast, 52, 65, 55, 58, 60, {}, {}
+084, Doduo, Twin Bird, normal, flying, 1.4, 39.2, 190, 96, medium fast, 35, 85, 45, 35, 75, {31}, {Dodrio}
+085, Dodrio, Tripple Bird, normal, flying, 1.8, 85.2, 45, 158, medium fast, 60, 110, 70, 60, 100, {}, {}
+086, Seel, Sea Lion, water, null, 1.1, 90.0, 190, 100, medium fast, 65, 45, 55, 70, 45, {34}, {Dewgong}
+087, Dewgong, Sea Lion, water, ice, 1.7, 120.0, 75, 176, medium fast, 90, 70, 80, 95, 70, {}, {}
+088, Grimer, Sludge, poison, null, 0.9, 30.0, 190, 90, medium fast, 80, 80, 50, 40, 25, {38}, {Muk}
+089, Muk, Sludge, poison, null, 1.2, 30.0, 75, 157, medium fast, 105, 105, 75, 65, 50, {}, {}
+090, Shellder, Bivalve, water, null, 0.3, 4.0, 190, 97, slow, 30, 65, 100, 45, 40, {water}, {Cloyster}
+091, Cloyster, Bivalve, water, ice, 1.5, 132.5, 60, 203, slow, 50, 95, 180, 85, 70, {}, {}
+092, Gastly, Gas, ghost, poison, 1.3, 0.1, 190, 95, medium slow, 30, 35, 30, 100, 80, {25}, {Haunter}
+093, Haunter, Gas, ghost, poison, 1.6, 0.1, 90, 162, medium slow, 45, 50, 45, 115, 95, {trade}, {Gengar}
+094, Gengar, Shadow, ghost, poison, 1.5, 40.5, 45, 190, medium slow, 60, 65, 60, 130, 110, {}, {}
+095, Onix, Rock Snake, rock, ground, 8.8, 210.0, 45, 108, medium fast, 35, 45, 160, 30, 70, {}, {}
+096, Drowzee, Hypnosis, psychic, null, 1.0, 32.4, 190, 102, medium fast, 60, 48, 45, 90, 42, {26}, {Hypno}
+097, Hypno, Hypnosis, psychic, null, 1.6, 75.6, 75, 165, medium fast, 85, 73, 70, 115, 67, {}, {}
+098, Krabby, River Crab, water, null, 0.4, 6.5, 225, 115, medium fast, 30, 105, 90, 25, 50, {28}, {Kingler}
+099, Kingler, Pincer, water, null, 1.3, 60.0, 60, 206, medium fast, 55, 130, 115, 50, 75, {}, {}
+100, Voltorb, Ball, electric, null, 0.5, 10.4, 190, 103, medium fast, 40, 30, 50, 55, 100, {30}, {Electrode}
+101, Electrode, Ball, electric, null, 1.2, 66.6, 60, 150, medium fast, 60, 50, 70, 80, 140, {}, {}
+102, Exeggcute, Egg, grass, psychic, 0.4, 2.5, 90, 98, slow, 60, 40, 80, 60, 40, {leaf}, {Exeggutor}
+103, Exeggutor, Coconut, grass, psychic, 2.0, 120.0, 45, 212, slow, 95, 95, 85, 125, 55, {}, {}
+104, Cubone, Lonely, ground, null, 0.4, 6.5, 190, 87, medium fast, 50, 50, 95, 40, 35, {28}, {Marowak}
+105, Marowak, Bone Keeper, ground, null, 1.0, 54.0, 75, 124, medium fast, 60, 80, 110, 50, 45, {}, {}
+106, Hitmonlee, Kicking, fighting, null, 1.5, 49.8, 45, 139, medium fast, 50, 120, 53, 35, 87, {}, {}
+107, Hitmonchan, Punching, fighting, null, 1.4, 50.2, 45, 140, medium fast, 50, 105, 79, 35, 76, {}, {}
+108, Lickitung, Licking, normal, null, 1.2, 65.5, 45, 127, medium fast, 90, 55, 75, 60, 30, {}, {}
+109, Koffing, Poison Gas, poison, null, 0.6, 1.0, 190, 114, medium fast, 40, 65, 95, 60, 35, {35}, {Weezing}
+110, Weezing, Poison Gas, poison, null, 1.2, 9.5, 60, 173, medium fast, 65, 90, 120, 85, 60, {}, {}
+111, Rhyhorn, Spikes, ground, rock, 1.0, 115.0, 120, 135, slow, 80, 85, 95, 30, 25, {42}, {Rhydon}
+112, Rhydon, Drill, ground, rock, 1.9, 120.0, 60, 204, slow, 105, 130, 120, 45, 40, {}, {}
+113, Chansey, Egg, normal, null, 1.1, 34.6, 30, 255, fast, 250, 5, 5, 105, 50, {}, {}
+114, Tangela, Vine, grass, null, 1.0, 35.0, 45, 166, Medium Fast, 65, 55, 115, 100, 60, {}, {}
+115, Kangaskhan, Parent, normal, null, 2.2, 80.0, 45, 175, Medium Fast, 105, 95, 80, 40, 90, {}, {}
+116, Horsea, Dragon, water, null, 0.4, 8.8, 225, 83, Medium Fast, 30, 40, 70, 70, 60, {32}, {Seadra}
+117, Seadra, Dragon, water, null, 1.2, 25.0, 75, 155, Medium Fast, 55, 65, 95, 95, 85, {}, {}
+118, Goldeen, Goldfish, water, null, 0.6, 15.0, 255, 111, Medium Fast, 45, 67, 60, 50, 63, {33}, {Seaking}
+119, Seaking, Goldfish, water, null, 1.3, 39.0, 60, 170, Medium Fast, 80, 92, 65, 80, 68, {}, {}
+120, Staryu, Star Shape, water, null, 0.8, 34.5, 225, 68, Slow, 30, 45, 55, 70, 85, {water}, {Starmie}
+121, Starmie, Mysterious, water, psychic, 1.1, 80.0, 60, 207, Slow, 60, 75, 85, 100, 115, {}, {}
+122, Mr. Mime, Barrier, psychic, null, 1.3, 54.5, 45, 136, Medium Fast, 40, 45, 65, 100, 90, {}, {}
+123, Scyther, Mantis, bug, flying, 1.5, 56.0, 45, 187, Medium Fast, 70, 110, 80, 55, 105, {}, {}
+124, Jynx, Human Shape, ice, psychic, 1.4, 40.6, 45, 137, Medium Fast, 65, 50, 35, 95, 95, {}, {}
+125, Electabuzz, Electric, electric, null, 1.1, 30.0, 45, 156, Medium Fast, 65, 83, 57, 85, 105, {}, {}
+126, Magmar, Spitfire, fire, null, 1.3, 44.5, 45, 167, Medium Fast, 65, 95, 57, 85, 93, {}, {}
+127, Pinsir, Stag Beetle, bug, null, 1.5, 55.0, 45, 200, Slow, 65, 125, 100, 55, 85, {}, {}
+128, Tauros, Wild Bull, normal, null, 1.4, 88.4, 45, 211, Slow, 75, 100, 95, 70, 110, {}, {}
+129, Magikarp, Fish, water, null, 0.9, 10.0, 255, 20, Slow, 20, 10, 55, 20, 80, {20}, {Gyarados}
+130, Gyarados, Atricious, water, flying, 6.5, 235.0, 45, 214, Slow, 95, 125, 79, 100, 81, {}, {}
+131, Lapras, Transport, water, ice, 2.5, 220.0, 45, 219, Slow, 130, 85, 80, 95, 60, {}, {}
+132, Ditto, Transform, normal, null, 0.3, 4.0, 35, 61, Medium Fast, 48, 48, 48, 48, 48, {}, {}
+133, Eevee, Evolution, normal, null, 0.3, 6.5, 45, 92, Medium Fast, 55, 55, 50, 65, 55, {water, thunder, fire}, {Vaporeon, Jolteon, Flareon}
+134, Vaporeon, Bubble Jet, water, null, 1.0, 29.0, 45, 196, Medium Fast, 130, 65, 60, 110, 65, {}, {}
+135, Jolteon, Lightning, electric, null, 0.8, 24.5, 45, 197, Medium Fast, 65, 65, 60, 110, 130, {}, {}
+136, Flareon, Flame, fire, null, 0.9, 25.0, 45, 198, Medium Fast, 65, 130, 60, 110, 65, {}, {}
+137, Porygon, Virtual, normal, null, 0.8, 36.5, 45, 130, Medium Fast, 65, 60, 70, 75, 40, {}, {}
+138, Omanyte, Spiral, rock, water, 0.4, 7.5, 45, 120, Medium Fast, 35, 40, 100, 90, 35, {40}, {Omastar}
+139, Omastar, Spiral, rock, water, 1.0, 35.0, 45, 199, Medium Fast, 70, 60, 125, 115, 55, {}, {}
+140, Kabuto, Shellfish, rock, water, 0.5, 11.5, 45, 119, Medium Fast, 30, 80, 90, 45, 55, {40}, {Kabutops}
+141, Kabutops, Shellfish, rock, water, 1.3, 40.5, 45, 201, Medium Fast, 60, 115, 105, 70, 80, {}, {}
+142, Aerodactyl, Fossil, rock, flying, 1.8, 59.0, 45, 202, Slow, 80, 105, 65, 60, 130, {}, {}
+143, Snorlax, Sleeping, normal, null, 2.1, 460.0, 25, 154, Slow, 160, 110, 65, 65, 30, {}, {}
+144, Articuno, Freeze, ice, flying, 1.7, 55.4, 3, 215, Slow, 90, 85, 100, 125, 85, {}, {}
+145, Zapdos, Electric, electric, flying, 1.6, 52.6, 3, 216, Slow, 90, 90, 85, 125, 100, {}, {}
+146, Moltres, Flame, fire, flying, 2.0, 60.0, 3, 217, Slow, 90, 100, 90, 125, 90, {}, {}
+147, Dratini, Dragon, dragon, null, 1.8, 3.3, 45, 67, Slow, 41, 64, 45, 50, 50, {30}, {Dragonair}
+148, Dragonair, Dragon, dragon, null, 4.0, 16.5, 27, 144, Slow, 61, 84, 65, 70, 70, {55}, {Dragonite}
+149, Dragonite, Dragon, dragon, flying, 2.2, 210.0, 9, 218, Slow, 91, 134, 95, 100, 80, {}, {}
+150, Mewtwo, Genetic, psychic, null, 2.0, 122.0, 3, 220, Slow, 106, 110, 90, 154, 130, {}, {}
+151, Mew, New Species, psychic, null, 0.4, 4.0, 45, 64, Medium Slow, 100, 100, 100, 100, 100, {}, {}

@@ -31,29 +31,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df20f3ac-0ad9-450e-a106-624a6aff05e4" name="Changes" comment="learned a lot. Fixed some shit. Continued with gen 1 moves">
-      <change afterPath="$PROJECT_DIR$/ParentClasses/Species.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ParentClasses/Species.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT Tutorials/GameButton.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QT Tutorials/GameButton.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen1/Gen1Move.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gen1/Gen1Move.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bits/Bit.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bits/Bit.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bits/BitManager.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bits/BitManager.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bits/Byte.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bits/Byte.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bits/Main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/GrowthRate.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/GrowthRate.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/GrowthRate.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/GrowthRate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/Type.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/Type.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParentClasses/Type.h" beforeDir="false" afterPath="$PROJECT_DIR$/ParentClasses/Type.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen1/Gen1Type.h" beforeDir="false" afterPath="$PROJECT_DIR$/gen1/Gen1Type.h" afterDir="false" />
-    </list>
+    <list default="true" id="df20f3ac-0ad9-450e-a106-624a6aff05e4" name="Changes" comment="Sharable?" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -352,7 +330,8 @@
     <MESSAGE value="SmartPointer Working! Going to rework Pokemon classes to use smart pointer. Learning more QT" />
     <MESSAGE value="Not a lot of progress. Tried making it easier to read. Figured out a segfault error all on my own without AI" />
     <MESSAGE value="learned a lot. Fixed some shit. Continued with gen 1 moves" />
-    <option name="LAST_COMMIT_MESSAGE" value="learned a lot. Fixed some shit. Continued with gen 1 moves" />
+    <MESSAGE value="Sharable?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sharable?" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
