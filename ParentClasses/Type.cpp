@@ -7,19 +7,15 @@
 #include <iostream>
 #include <utility>
 
-Type::Type() : weaknesses(SmartPointer<double>::arrayPointer(1)) {
+Type::Type() : weaknesses() {
     this->id = 0;
     this->name = "Normal";
     this->size = 0;
 }
 
-Type::Type(std::string name, int id, double weaknesses[], size_t size) : name(std::move(name)), id(id), weaknesses(SmartPointer<double>::arrayPointer(weaknesses, size)), size(size) {
+Type::Type(std::string name, int id, std::vector<double> weaknesses, size_t size) : name(std::move(name)), id(id), weaknesses(std::move(weaknesses)), size(size) {
 
     std::cout << "Constructor called for Type: " << this->name << std::endl;
-
-    delete [] weaknesses;
-
-    std::cout << "Original weakness array deleted" << std::endl;
 }
 
 std::string Type::getName() const {
@@ -30,11 +26,7 @@ int Type::getId() const {
     return this->id;
 }
 
-SmartPointer<double> &Type::getWeaknesses() {
-    return this->weaknesses;
-}
-
-SmartPointer<double> Type::getWeaknessArraySize() const {
+std::vector<double> &Type::getWeaknesses() {
     return this->weaknesses;
 }
 

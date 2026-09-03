@@ -7,12 +7,11 @@
 #include <complex>
 #include <utility>
 
-GrowthRate::GrowthRate(const std::string& name, const SmartPointer<int>& experience) : experience(experience) {
+GrowthRate::GrowthRate(const std::string& name, const std::vector<int>& experience) : experience(experience) {
 
     std::cout << "GrowthRate constructor started" << std::endl;
 
     this->name = name;
-    this->experience.setName(name + " experience array");
 
     std::cout << "Erratic Growth Rate Constructed" << std::endl << std::endl;
 }
@@ -23,7 +22,7 @@ std::string GrowthRate::getName() const {
     return this->name;
 }
 
-SmartPointer<int> GrowthRate::getExperience() const {
+std::vector<int> GrowthRate::getExperience() const {
     return this->experience;
 }
 
@@ -39,16 +38,13 @@ int GrowthRate::expToLevel(int startLevel, int targetLevel) {
     return exp;
 }
 
-SmartPointer<GrowthRate> GrowthRate::Erratic() {
+GrowthRate GrowthRate::Erratic() {
 
     std::cout << "Erratic Method started" << std::endl;
 
-    SmartPointer<int> experience = SmartPointer<int>::arrayPointer(100);
-    experience.setName("Erratic Temp Experience");
+    std::vector<int> experience;
 
     experience[0] = 0;
-
-    std::cout << "Experience smart pointer instantiated" << std::endl;
 
     int exp = 0;
     for (int i = 2; i <= 100; i++) {
@@ -64,22 +60,16 @@ SmartPointer<GrowthRate> GrowthRate::Erratic() {
         std::cout << experience[i-1] << std::endl;
         exp+=experience[i-1];
     }
-    std::cout << std::endl;
-    std::cout << "Experience set: " << exp << std::endl;
     std::string name = "Erratic";
-    SmartPointer<GrowthRate> erratic = SmartPointer<GrowthRate>::newPointer(GrowthRate(name, experience));
-    erratic.setName("Erratic Growth Rate");
+    GrowthRate erratic = GrowthRate(name, experience);
     return erratic;
 }
 
-SmartPointer<GrowthRate> GrowthRate::Fast() {
+GrowthRate GrowthRate::Fast() {
 
-    SmartPointer<int> experience = SmartPointer<int>::arrayPointer(100);
-    experience.setName("Fast Temp Experience");
+    std::vector<int> experience;
 
     experience[0] = 0;
-
-    std::cout << "Experience smart pointer instantiated" << std::endl;
 
     int exp = 0;
     for (int i = 2; i <= 100; i++) {
@@ -87,23 +77,17 @@ SmartPointer<GrowthRate> GrowthRate::Fast() {
         std::cout << experience[i-1] << std::endl;
         exp+=experience[i-1];
     }
-    std::cout << std::endl;
-    std::cout << "Experience set: " << exp << std::endl;
     std::string name = "Fast";
-    SmartPointer<GrowthRate> fast = SmartPointer<GrowthRate>::newPointer(GrowthRate(name, experience));
-    fast.setName("Fast Growth Rate");
+    GrowthRate fast = GrowthRate(name, experience);
     return fast;
 
 
 }
 
-SmartPointer<GrowthRate> GrowthRate::MediumFast() {
-    SmartPointer<int> experience = SmartPointer<int>::arrayPointer(100);
-    experience.setName("Medium Fast Temp Experience");
+GrowthRate GrowthRate::MediumFast() {
+    std::vector<int> experience;
 
     experience[0] = 0;
-
-    std::cout << "Experience smart pointer instantiated" << std::endl;
 
     int exp = 0;
     for (int i = 2; i <= 100; i++) {
@@ -111,21 +95,15 @@ SmartPointer<GrowthRate> GrowthRate::MediumFast() {
         std::cout << experience[i-1] << std::endl;
         exp+=experience[i-1];
     }
-    std::cout << std::endl;
-    std::cout << "Experience set: " << exp << std::endl;
     std::string name = "Medium Fast";
-    SmartPointer<GrowthRate> mediumFast = SmartPointer<GrowthRate>::newPointer(GrowthRate(name, experience));
-    mediumFast.setName("Medium Fast Growth Rate");
+    GrowthRate mediumFast = GrowthRate(name, experience);
     return mediumFast;
 }
 
-SmartPointer<GrowthRate> GrowthRate::MediumSlow() {
-    SmartPointer<int> experience = SmartPointer<int>::arrayPointer(100);
-    experience.setName("Medium Slow Temp Experience");
+GrowthRate GrowthRate::MediumSlow() {
+    std::vector<int> experience;
 
     experience[0] = 0;
-
-    std::cout << "Experience smart pointer instantiated" << std::endl;
 
     int exp = 0;
     for (int i = 2; i <= 100; i++) {
@@ -133,21 +111,15 @@ SmartPointer<GrowthRate> GrowthRate::MediumSlow() {
         std::cout << experience[i-1] << std::endl;
         exp+=experience[i-1];
     }
-    std::cout << std::endl;
-    std::cout << "Experience set: " << exp << std::endl;
     std::string name = "Medium Slow";
-    SmartPointer<GrowthRate> mediumSlow = SmartPointer<GrowthRate>::newPointer(GrowthRate(name, experience));
-    mediumSlow.setName("Medium Slow Growth Rate");
+    GrowthRate mediumSlow = GrowthRate(name, experience);
     return mediumSlow;
 }
 
-SmartPointer<GrowthRate> GrowthRate::Slow() {
-    SmartPointer<int> experience = SmartPointer<int>::arrayPointer(100);
-    experience.setName("Slow Temp Experience");
+GrowthRate GrowthRate::Slow() {
+    std::vector<int> experience;
 
     experience[0] = 0;
-
-    std::cout << "Experience smart pointer instantiated" << std::endl;
 
     int exp = 0;
     for (int i = 2; i <= 100; i++) {
@@ -155,21 +127,15 @@ SmartPointer<GrowthRate> GrowthRate::Slow() {
         std::cout << experience[i-1] << std::endl;
         exp+=experience[i-1];
     }
-    std::cout << std::endl;
-    std::cout << "Experience set: " << exp << std::endl;
     std::string name = "Slow";
-    SmartPointer<GrowthRate> slow = SmartPointer<GrowthRate>::newPointer(GrowthRate(name, experience));
-    slow.setName("Slow Growth Rate");
+    GrowthRate slow = GrowthRate(name, experience);
     return slow;
 }
 
-SmartPointer<GrowthRate> GrowthRate::Fluctuating() {
-    SmartPointer<int> experience = SmartPointer<int>::arrayPointer(100);
-    experience.setName("Fluctuating Temp Experience");
+GrowthRate GrowthRate::Fluctuating() {
+    std::vector<int> experience;
 
     experience[0] = 0;
-
-    std::cout << "Experience smart pointer instantiated" << std::endl;
 
     int exp = 0;
     for (int i = 2; i <= 100; i++) {
@@ -186,10 +152,7 @@ SmartPointer<GrowthRate> GrowthRate::Fluctuating() {
         std::cout << experience[i-1] << std::endl;
 
     }
-    std::cout << std::endl;
-    std::cout << "Experience set: " << exp << std::endl;
     std::string name = "Fluctuating";
-    SmartPointer<GrowthRate> fluctuating = SmartPointer<GrowthRate>::newPointer(GrowthRate(name, experience));
-    fluctuating.setName("Fluctuating Growth Rate");
+    GrowthRate fluctuating = GrowthRate(name, experience);
     return fluctuating;
 }

@@ -4,7 +4,6 @@
 
 #ifndef POKEMONPROJECT_GEN1TYPE_H
 #define POKEMONPROJECT_GEN1TYPE_H
-#include "../SmartPointer.h"
 #include "../ParentClasses/Type.h"
 
 

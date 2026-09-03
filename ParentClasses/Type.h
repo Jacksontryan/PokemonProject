@@ -6,6 +6,7 @@
 #define POKEMONPROJECT_TYPE_H
 
 #include <string>
+#include <vector>
 
 #include "../SmartPointer.h"
 
@@ -13,18 +14,17 @@ class Type {
 protected:
     std::string name;
     int id;
-    SmartPointer<double> weaknesses;
+    std::vector<double> weaknesses;
     size_t size;
 public:
     Type();
-    Type(std::string name, int id, double weaknesses[], size_t size);
+    Type(std::string name, int id, std::vector<double> weaknesses, size_t size);
 
     virtual ~Type()= default;
 
     [[nodiscard]] virtual std::string getName() const;
     [[nodiscard]] virtual int getId() const;
-    [[nodiscard]] virtual SmartPointer<double>& getWeaknesses();
-    [[nodiscard]] virtual SmartPointer<double> getWeaknessArraySize() const;
+    [[nodiscard]] virtual std::vector<double>& getWeaknesses();
     [[nodiscard]] virtual double getWeakness(const Type& type);
 
 };

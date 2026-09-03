@@ -5,27 +5,27 @@
 #ifndef POKEMONPROJECT_GROWTHRATE_H
 #define POKEMONPROJECT_GROWTHRATE_H
 #include <string>
+#include <vector>
 
-#include "../SmartPointer.h"
 
 class GrowthRate {
     std::string name;
-    SmartPointer<int> experience;
-    GrowthRate(const std::string& name, const SmartPointer<int>& experience);
+    std::vector<int> experience;
+    GrowthRate(const std::string& name, const std::vector<int>& experience);
 
     public:
     virtual ~GrowthRate();
     [[nodiscard]] virtual std::string getName() const;
-    [[nodiscard]] virtual SmartPointer<int> getExperience() const;
+    [[nodiscard]] virtual std::vector<int> getExperience() const;
     [[nodiscard]] virtual int expToLevel(int level);
     [[nodiscard]] virtual int expToLevel(int startLevel, int targetLevel);
 
-    static SmartPointer<GrowthRate> MediumFast();
-    static SmartPointer<GrowthRate> Erratic();
-    static SmartPointer<GrowthRate> Fluctuating();
-    static SmartPointer<GrowthRate> MediumSlow();
-    static SmartPointer<GrowthRate> Fast();
-    static SmartPointer<GrowthRate> Slow();
+    static GrowthRate MediumFast();
+    static GrowthRate Erratic();
+    static GrowthRate Fluctuating();
+    static GrowthRate MediumSlow();
+    static GrowthRate Fast();
+    static GrowthRate Slow();
 
 };
 
